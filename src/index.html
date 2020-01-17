@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script language="Javascript">
+        function iniciaJogo() {
+            var nivel = document.getElementById('nivel').value;
+            window.location.href = "jogo.html?"+nivel;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <select id="nivel">
+            <option value="1">Fácil</option>
+            <option value="2">Médio</option>
+            <option value="3">Difícil</option>
+        </select>
+    </div>
+    <div>
+        <img src="../img/iniciar.png" onclick="iniciaJogo()" />
+    </div>
+
+</body>
+</html>
